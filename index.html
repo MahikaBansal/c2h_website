@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create2Help</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* MISSION STATEMENT BLOCK */
+        .mission {
+            display: flex;
+            justify-content: space-between;
+            border: 2px solid black;
+            margin: 30px auto;
+            padding: 20px;
+            width: 90%;
+            background: #fff;
+        }
+
+        .mission-left,
+        .mission-right {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: 200px;
+            background: #f7f7f7;
+            border: 1px solid #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-style: italic;
+            color: #555;
+        }
+
+        .mission-right {
+            text-align: center;
+        }
+
+        .mission-right h2 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        /* EVENTS SECTION */
+        .events {
+            margin: 60px auto;
+            text-align: center;
+            width: 90%;
+        }
+
+        .event-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .event-card {
+            background: #ffffff;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 280px;
+            padding: 15px;
+            text-align: center;
+            transition: 0.3s ease;
+        }
+
+        .event-card:hover {
+            transform: scale(1.03);
+        }
+
+        .event-image {
+            width: 100%;
+            height: 180px;
+            background-color: #f2f2f2;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-style: italic;
+            color: #777;
+        }
+
+        .event-card h3 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+            margin: 10px 0 5px;
+        }
+
+        .event-card p {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .view-events-btn {
+            background-color: var(--blue);
+            color: black;
+            border: 2px solid black;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            margin-top: 30px;
+        }
+
+        .view-events-btn:hover {
+            background-color: #a8d8ea;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo-section">
+            <img src="images/logo.jpg" alt="Logo left" class="logo">
+            <h1>Create2Help</h1>
+            <img src="images/logo.jpg" alt="Logo right" class="logo">
+        </div>
+
+        <nav>
+            <a href="index.html" style="background-color: var(--pink);">Home</a>
+            <a href="about.html" style="background-color: var(--yellow);">About</a>
+            <a href="journey.html" style="background-color: var(--green);">Journey</a>
+            <a href="events.html" style="background-color: var(--blue);">Events</a>
+            <a href="team.html" style="background-color: var(--purple);">Team</a>
+            <a href="donate.html" style="background-color: var(--white);">Donate</a>
+        </nav>
+    </header>
+
+    <!-- Mission Section -->
+    <section class="mission">
+        <div class="mission-left">
+            <div class="image-placeholder"> <img src="image placeholder" alt="Mission Image" style="width:x;">
+            </div>
+        </div>
+        <div class="mission-right">
+            <h2>MISSION STATEMENT</h2>
+            <p>The ability to create is the power to help.</p>
+            <br>
+            <a href="about.html"><button>About</button></a>
+        </div>
+    </section>
+
+    <!-- Events section -->
+    <section class="events">
+        <h2 style="font-size: 40px;">Past Events</h2>
+
+        <div class="event-container">
+            <div class="event-card">
+                <img class="event-image" src="images/logo.jpg" alt="Event 1 Image">
+                <h3>Art for Change Workshop</h3>
+                <p>A community art event raising awareness about creative healing and self-expression.</p>
+            </div>
+
+            <div class="event-card">
+                <img class="event-image" src="images/logo.jpg" alt="Event 2 Image">
+                <h3>Spring Fundraiser</h3>
+                <p>Our team organized a fundraiser to support local youth art programs.</p>
+            </div>
+
+            <div class="event-card">
+                <img class="event-image" src="images/logo.jpg" alt="Event 3 Image">
+                <h3>Holiday Creation Drive</h3>
+                <p>Volunteers made handmade gifts for underprivileged families in the community.</p>
+            </div>
+        </div>
+
+        <a href="events.html"><button class="view-events-btn">View All Events</button></a>
+    </section>
+
+
+    <footer>
+        <p style=" text-align: center;"> 2024 Create2Help. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

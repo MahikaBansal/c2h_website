@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey | Create2Help</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .journey-section {
+            padding: 50px 20px;
+            text-align: center;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .journey-section h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .journey-section p {
+            margin-bottom: 40px;
+            font-size: 20px;
+        }
+
+        .journey-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .journey-item {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            text-align: left;
+            background: var(--green);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .journey-item.reverse {
+            flex-direction: row-reverse;
+            background: var(--blue);
+        }
+
+        .journey-item img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+            border: 2px solid black;
+        }
+
+        .journey-text h3 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo-section">
+            <img src="images/logo.jpg" alt="Logo left" class="logo">
+            <h1>Create2Help</h1>
+            <img src="images/logo.jpg" alt="Logo right" class="logo">
+        </div>
+        <nav>
+            <a href="index.html" style="background-color: var(--pink);">Home</a>
+            <a href="about.html" style="background-color: var(--yellow);">About</a>
+            <a href="journey.html" style="background-color: var(--green);">Journey</a>
+            <a href="events.html" style="background-color: var(--blue);">Events</a>
+            <a href="team.html" style="background-color: var(--purple);">Team</a>
+            <a href="donate.html" style="background-color: var(--white);">Donate</a>
+        </nav>
+    </header>
+
+    <section class="journey-section">
+        <h2>Our Journey</h2>
+        <p>
+            From humble beginnings to meaningful impact — Create2Help was born out of a simple idea: that creativity has
+            the power to change lives. Since our founding, we've built projects, inspired volunteers, and touched
+            communities
+            across the globe.
+        </p>
+
+        <div class="journey-timeline">
+            <div class="journey-item">
+                <img src="images/logo.jpg" alt="Milestone 1">
+                <div class="journey-text">
+                    <h3>year - name of event</h3>
+                    <p>placeholder text.</p>
+                </div>
+            </div>
+
+            <div class="journey-item reverse">
+                <img src="images/logo.jpg" alt="Milestone 2">
+                <div class="journey-text">
+                    <h3>year - name of event</h3>
+                    <p>placeholder text.</p>
+                </div>
+            </div>
+
+            <div class="journey-item">
+                <img src="images/logo.jpg" alt="Milestone 3">
+                <div class="journey-text">
+                    <h3>year - name of event</h3>
+                    <p>placeholder text.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p style=" text-align: center;"> 2024 Create2Help. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
