@@ -1,3 +1,11 @@
+<!-- 
+1) change cursive font
+2) add more colors
+3) two logos on top are redundant -> move logo to side or replace title with logo since name of website is in logo
+4) add hover animations
+5) make logo on top go to homepage when clicked
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,9 +14,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create2Help</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;500&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="css/style.css">
 
     <style>
@@ -20,7 +29,7 @@
             margin: 30px auto;
             padding: 20px;
             width: 90%;
-            background: #fff;
+            background: #f2f2f2;
         }
 
         .mission-left,
@@ -66,8 +75,28 @@
             margin-top: 40px;
         }
 
-        .event-card {
-            background: #ffffff;
+        .event-card1 {
+            background: var(--pink);
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 280px;
+            padding: 15px;
+            text-align: center;
+            transition: 0.3s ease;
+        }
+
+        .event-card2 {
+            background: var(--yellow);
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 280px;
+            padding: 15px;
+            text-align: center;
+            transition: 0.3s ease;
+        }
+
+        .event-card3 {
+            background: var(--blue);
             border: 2px solid black;
             border-radius: 10px;
             width: 280px;
@@ -106,7 +135,7 @@
         }
 
         .view-events-btn {
-            background-color: var(--blue);
+            background-color: var(--purple);
             color: black;
             border: 2px solid black;
             padding: 10px 20px;
@@ -118,7 +147,7 @@
         }
 
         .view-events-btn:hover {
-            background-color: #a8d8ea;
+            background-color: var(--purple);
             transform: scale(1.05);
         }
     </style>
@@ -126,11 +155,14 @@
 
 <body>
     <header>
-        <div class="logo-section">
-            <img src="images/logo.jpg" alt="Logo left" class="logo">
-            <h1>Create2Help</h1>
-            <img src="images/logo.jpg" alt="Logo right" class="logo">
-        </div>
+        <a href="index.html">
+            <div class="logo-section">
+                <img style="width:120px; position:absolute; top: 10px; left:10px" src="images/logo.jpg" alt="Logo left"
+                    class="logo">
+                <h1 style="text-decoration: none; color:black; font-weight:bold; ">Create2Help</h1>
+            </div>
+        </a>
+
 
         <nav>
             <a href="index.html" style="background-color: var(--pink);">Home</a>
@@ -145,14 +177,14 @@
     <!-- Mission Section -->
     <section class="mission">
         <div class="mission-left">
-            <div class="image-placeholder"> <img src="image placeholder" alt="Mission Image" style="width:x;">
+            <div class="image-placeholder"> <img src="images/home-mission.jpg" alt="Mission Image" style="width:100%;">
             </div>
         </div>
         <div class="mission-right">
             <h2>MISSION STATEMENT</h2>
             <p>The ability to create is the power to help.</p>
             <br>
-            <a href="about.html"><button>About</button></a>
+            <a href="about.html"><button style="background-color: var(--yellow);">About</button></a>
         </div>
     </section>
 
@@ -161,22 +193,22 @@
         <h2 style="font-size: 40px;">Past Events</h2>
 
         <div class="event-container">
-            <div class="event-card">
-                <img class="event-image" src="images/logo.jpg" alt="Event 1 Image">
-                <h3>Art for Change Workshop</h3>
-                <p>A community art event raising awareness about creative healing and self-expression.</p>
+            <div class="event-card1">
+                <img class="event-image" src="images/home-class.jpg" alt="Event 1 Image">
+                <h3>Art classes</h3>
+                <p>Community art classes spreading the joy of creativity.</p>
             </div>
 
-            <div class="event-card">
-                <img class="event-image" src="images/logo.jpg" alt="Event 2 Image">
-                <h3>Spring Fundraiser</h3>
-                <p>Our team organized a fundraiser to support local youth art programs.</p>
+            <div class="event-card2">
+                <img class="event-image" src="images/home-card.jpg" alt="Event 2 Image">
+                <h3>Greeting Card Drive</h3>
+                <p>Annual holiday greeting card drive for hospital patients.</p>
             </div>
 
-            <div class="event-card">
-                <img class="event-image" src="images/logo.jpg" alt="Event 3 Image">
-                <h3>Holiday Creation Drive</h3>
-                <p>Volunteers made handmade gifts for underprivileged families in the community.</p>
+            <div class="event-card3">
+                <img class="event-image" src="images/home-food.jpg" alt="Event 3 Image">
+                <h3>Meal Donation</h3>
+                <p>Meal donations for womens shelters.</p>
             </div>
         </div>
 
@@ -185,7 +217,7 @@
 
 
     <footer>
-        <p style=" text-align: center;"> 2024 Create2Help. All rights reserved.</p>
+        <p style=" text-align: center;"> 2025 Create2Help. All rights reserved.</p>
     </footer>
 </body>
 
