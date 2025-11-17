@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events | Create2Help</title>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;500&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
@@ -31,7 +33,7 @@
         .events-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
+            gap: 20px;
         }
 
         .event-card {
@@ -44,7 +46,7 @@
             transition: transform 0.2s, box-shadow 0.2s;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: flex-start;
         }
 
         .event-card img {
@@ -61,18 +63,33 @@
         }
 
         .event-card p {
-            margin: 0 15px 20px;
-            font-size: 10px;
+            margin: 0 15px 10px;
+            font-size: 12px;
         }
 
         .event-card button {
             margin: 0 15px 15px;
-            align-self: start;
+            align-self: flex-start;
         }
 
         .event-card:hover {
             transform: scale(1.02);
             box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Learn more */
+        .event-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+            background: #ffffffaa;
+            padding: 0 15px;
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        .event-details.open {
+            max-height: 300px;
+            padding: 15px;
         }
     </style>
 </head>
@@ -83,7 +100,8 @@
             <div class="logo-section">
                 <img style="width:120px; position:absolute; top: 10px; left:10px" src="images/logo.jpg" alt="Logo left"
                     class="logo">
-                <h1 style="text-decoration: none; color:black; font-weight:bold; ">Create2Help</h1>
+                <h1 style="font-family: josefin slab;text-decoration: none; color:black; font-weight:bold; ">Create2Help
+                </h1>
             </div>
         </a>
         <nav>
@@ -97,59 +115,120 @@
     </header>
 
     <section class="events-section">
-        <h2>Recent Events</h2>
+        <h2 style="font-family: josefin slab;">Recent Events</h2>
         <p class="events-intro">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Morbi sodales augue vitae
             dictum eleifend. Vivamus aliquam nisl nec commodo porttitor.
         </p>
 
         <div class="events-grid">
+
+            <!-- Event 1 -->
             <div class="event-card">
-                <img src="images/artshow.jpg" alt="Event One">
+                <img src="images/artshow.jpg" alt="Art Show">
                 <h3>Art Show</h3>
-                <p>Art show of all my artwork. Donated $2000 to seattle childrens hospital. </p>
-                <button>Learn More</button>
+                <p>Art show of all my artwork. Donated $2000 to Seattle Children's Hospital.</p>
+                <button class="expand-btn">Learn More</button>
+                <div class="event-details">
+                    <p><strong>Date:</strong> June 2024</p>
+                    <p><strong>Location:</strong> Local Community Center</p>
+                    <p><strong>Highlights:</strong>Suspendisse
+                        potenti. Morbi sodales augue vitae
+                        dictum eleifend. Vivamus aliquam nisl nec commodo porttitor..</p>
+                    <p> Suspendisse potenti. Morbi sodales augue
+                        vitae
+                        dictum eleifend. Vivamus aliquam nisl nec commodo porttitor. </p>
+                </div>
             </div>
 
+            <!-- Event 2 -->
             <div class="event-card">
-                <img src="images/paintingclass.jpg" alt="Event Two">
-                <h3>Painting class</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat odio non tortor euismod, ac
-                    fermentum massa mattis.</p>
-                <button>Learn More</button>
+                <img src="images/paintingclass.jpg" alt="Painting Class">
+                <h3>Painting Class</h3>
+                <p>Learn basic and advanced painting techniques in a fun, inclusive environment.</p>
+                <button class="expand-btn">Learn More</button>
+                <div class="event-details">
+                    <p><strong>Date:</strong> March 2025</p>
+                    <p><strong>Location:</strong> Community Art Studio</p>
+                    <p><strong>Highlights:</strong>Suspendisse
+                        potenti. Morbi sodales augue vitae
+                        dictum eleifend. Vivamus aliquam nisl nec commodo porttitor..</p>
+                    <p> Suspendisse potenti. Morbi sodales augue
+                        vitae
+                        dictum eleifend. Vivamus aliquam nisl nec commodo porttitor. </p>
+                </div>
             </div>
 
+            <!-- Event 3 -->
             <div class="event-card">
-                <img src="images/jewlerybox.jpg" alt="Event Three">
-                <h3>Jewlery Box Painting Activity</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dapibus sapien eu justo
-                    sollicitudin, nec bibendum turpis viverra.</p>
-                <button>Learn More</button>
+                <img src="images/jewlerybox.jpg" alt="Jewelry Box Activity">
+                <h3>Jewelry Box Painting</h3>
+                <p>Decorate jewelry boxes to donate to seniors during holiday season.</p>
+                <button class="expand-btn">Learn More</button>
+                <div class="event-details">
+                    <p><strong>Date:</strong> December 2024</p>
+                    <p><strong>Location:</strong> Youth Center</p>
+                    <p><strong>Highlights:</strong>Suspendisse
+                        potenti. Morbi sodales augue vitae
+                        dictum eleifend. Vivamus aliquam nisl nec commodo porttitor..</p>
+                    <p> Suspendisse potenti. Morbi sodales augue
+                        vitae
+                        dictum eleifend. Vivamus aliquam nisl nec commodo porttitor. </p>
+                </div>
             </div>
 
+            <!-- Event 4 -->
             <div class="event-card">
-                <img src="images/mealdonation.jpg" alt="Event Four">
+                <img src="images/mealdonation.jpg" alt="Meal Donation">
                 <h3>Meal Donation</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris bibendum, velit vitae porta
-                    fermentum, enim lacus malesuada sem, eget blandit magna arcu id mi.</p>
-                <button>Learn More</button>
+                <p>Prepared and delivered meals to local women’s shelters.</p>
+                <button class="expand-btn">Learn More</button>
+                <div class="event-details">
+                    <p><strong>Date:</strong> January 2025</p>
+                    <p><strong>Location:</strong> Various shelters</p>
+                    <p><strong>Highlights:</strong>Suspendisse
+                        potenti. Morbi sodales augue vitae
+                        dictum eleifend. Vivamus aliquam nisl nec commodo porttitor..</p>
+                    <p> Suspendisse potenti. Morbi sodales augue
+                        vitae
+                        dictum eleifend. Vivamus aliquam nisl nec commodo porttitor. </p>
+                </div>
             </div>
 
-
+            <!-- Event 5 -->
             <div class="event-card">
-                <img src="images/communitymural.jpg" alt="Event Four">
+                <img src="images/communitymural.jpg" alt="Community Mural">
                 <h3>Community Mural</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris bibendum, velit vitae porta
-                    fermentum, enim lacus malesuada sem, eget blandit magna arcu id mi.</p>
-                <button>Learn More</button>
+                <p>Created a mural with local youth and artists for public space.</p>
+                <button class="expand-btn">Learn More</button>
+                <div class="event-details">
+                    <p><strong>Date:</strong> April 2025</p>
+                    <p><strong>Location:</strong> Downtown Public Wall</p>
+                    <p><strong>Highlights:</strong>Suspendisse
+                        potenti. Morbi sodales augue vitae
+                        dictum eleifend. Vivamus aliquam nisl nec commodo porttitor..</p>
+                    <p> Suspendisse potenti. Morbi sodales augue
+                        vitae
+                        dictum eleifend. Vivamus aliquam nisl nec commodo porttitor. </p>
+                </div>
             </div>
 
+            <!-- Event 6 -->
             <div class="event-card">
-                <img src="images/mealdonate.jpg" alt="Event Four">
+                <img src="images/mealdonate.jpg" alt="Meal Donation 2">
                 <h3>Meal Donation</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris bibendum, velit vitae porta
-                    fermentum, enim lacus malesuada sem, eget blandit magna arcu id mi.</p>
-                <button>Learn More</button>
+                <p>Another round of meal donations for local shelters.</p>
+                <button class="expand-btn">Learn More</button>
+                <div class="event-details">
+                    <p><strong>Date:</strong> May 2025</p>
+                    <p><strong>Location:</strong> Various shelters</p>
+                    <p><strong>Highlights:</strong>Suspendisse
+                        potenti. Morbi sodales augue vitae
+                        dictum eleifend. Vivamus aliquam nisl nec commodo porttitor..</p>
+                    <p> Suspendisse potenti. Morbi sodales augue
+                        vitae
+                        dictum eleifend. Vivamus aliquam nisl nec commodo porttitor. </p>
+                </div>
             </div>
 
         </div>
@@ -158,6 +237,21 @@
     <footer>
         <p>2025 Create2Help. All rights reserved.</p>
     </footer>
+
+    <script>
+        const buttons = document.querySelectorAll('.expand-btn');
+
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const details = btn.nextElementSibling;
+                details.classList.toggle('open');
+
+                btn.textContent = details.classList.contains('open')
+                    ? "Show Less"
+                    : "Learn More";
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -21,6 +21,36 @@
     <link rel="stylesheet" href="css/style.css">
 
     <style>
+        /* HERO BANNER */
+        .hero {
+            width: 100%;
+            padding: 80px 20px;
+            background: linear-gradient(90deg, var(--purple), var(--pink), var(--yellow), var(--blue));
+            text-align: center;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+
+        .hero h2 {
+            font-family: josefin slab;
+            font-size: 48px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .hero button {
+            margin-top: 25px;
+            background: var(--white);
+            border-radius: 10px;
+            font-size: 17px;
+        }
+
         /* MISSION STATEMENT BLOCK */
         .mission {
             display: flex;
@@ -29,7 +59,7 @@
             margin: 30px auto;
             padding: 20px;
             width: 90%;
-            background: #f2f2f2;
+            background: var(--brown);
         }
 
         .mission-left,
@@ -135,7 +165,7 @@
         }
 
         .view-events-btn {
-            background-color: var(--purple);
+            background-color: var(--white);
             color: black;
             border: 2px solid black;
             padding: 10px 20px;
@@ -150,6 +180,51 @@
             background-color: var(--purple);
             transform: scale(1.05);
         }
+
+        /* IMPACT STATS SECTION */
+        .impact-section {
+            width: 90%;
+            margin: 60px auto;
+            text-align: center;
+        }
+
+        .impact-section h2 {
+            font-size: 40px;
+            margin-bottom: 40px;
+            font-family: 'Josefin Slab';
+        }
+
+        .impact-stats-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .impact-card {
+            width: 220px;
+            padding: 25px;
+            border: 2px solid black;
+            border-radius: 12px;
+            background: var(--yellow);
+            transition: 0.3s ease;
+        }
+
+        .impact-card:hover {
+            transform: scale(1.05);
+        }
+
+        .impact-number {
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .impact-text {
+            font-size: 16px;
+            font-weight: 500;
+        }
     </style>
 </head>
 
@@ -159,7 +234,8 @@
             <div class="logo-section">
                 <img style="width:120px; position:absolute; top: 10px; left:10px" src="images/logo.jpg" alt="Logo left"
                     class="logo">
-                <h1 style="text-decoration: none; color:black; font-weight:bold; ">Create2Help</h1>
+                <h1 style="font-family: josefin slab ;text-decoration: none; color:black; font-weight:bold; ">
+                    Create2Help</h1>
             </div>
         </a>
 
@@ -174,6 +250,15 @@
         </nav>
     </header>
 
+    <!-- Hero banner -->
+    <section class="hero">
+        <h2>Creativity That Makes a Difference</h2>
+        <p>At Create2Help, we use art, compassion, and youth-led action to bring joy, comfort, and hope to our
+            community.
+        </p>
+        <a href="about.html"><button>Learn More</button></a>
+    </section>
+
     <!-- Mission Section -->
     <section class="mission">
         <div class="mission-left">
@@ -184,13 +269,40 @@
             <h2>MISSION STATEMENT</h2>
             <p>The ability to create is the power to help.</p>
             <br>
-            <a href="about.html"><button style="background-color: var(--yellow);">About</button></a>
+            <a href="about.html"><button style="background-color: var(--white);">About</button></a>
         </div>
     </section>
 
+    <section class="impact-section">
+        <h2>Our Impact</h2>
+
+        <div class="impact-stats-container">
+
+            <div class="impact-card" style="background: var(--pink);">
+                <div class="impact-number">1,000+</div>
+                <div class="impact-text">Greeting Cards Delivered</div>
+            </div>
+
+            <div class="impact-card" style="background: var(--yellow);">
+                <div class="impact-number">120+</div>
+                <div class="impact-text">Students Reached Through Art</div>
+            </div>
+
+            <div class="impact-card" style="background: var(--green);">
+                <div class="impact-number">50+</div>
+                <div class="impact-text">Meals Donated</div>
+            </div>
+
+            <div class="impact-card" style="background: var(--blue);">
+                <div class="impact-number">30+</div>
+                <div class="impact-text">Community Events Hosted</div>
+            </div>
+
+        </div>
+    </section>
     <!-- Events section -->
     <section class="events">
-        <h2 style="font-size: 40px;">Past Events</h2>
+        <h2 style="font-family: josefin slab; font-size: 40px;">Past Events</h2>
 
         <div class="event-container">
             <div class="event-card1">

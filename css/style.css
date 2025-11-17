@@ -65,13 +65,13 @@ nav a:hover {
 }
 
 :root {
-    --pink: #edd2c5;
-    --yellow: #f5f4b0;
-    --green: #d9f099;
-    --blue: #c6e9f8;
-    --purple: #c5c8f2;
+    --pink: #ffe7e7;
+    --yellow: #fffee0;
+    --green: #f1ffcc;
+    --blue: #d7f3ff;
+    --purple: #dee0ff;
     --white: #ffffff;
-    --brown: #8f6b50;
+    --brown: #cbbdb2;
 }
 
 button {

@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Create2Help</title>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;500&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
@@ -36,6 +38,26 @@
         .slider img.active {
             opacity: 1;
         }
+
+        .quote-banner {
+            margin: 40px auto;
+            padding: 40px 20px;
+            max-width: 900px;
+            background: #f8f4ef;
+            border-left: 6px solid var(--pink);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .quote-text {
+            font-family: "Josefin Slab", serif;
+            font-size: 2rem;
+            font-weight: 600;
+            text-align: center;
+            line-height: 1.4;
+            padding: 0 10px;
+            color: #333;
+        }
     </style>
 </head>
 
@@ -45,11 +67,13 @@
             <div class="logo-section">
                 <img style="width:120px; position:absolute; top: 10px; left:10px" src="images/logo.jpg" alt="Logo left"
                     class="logo">
-                <h1 style="text-decoration: none; color:black; font-weight:bold; ">Create2Help</h1>
+                <h1 style="font-family: josefin slab; text-decoration: none; color:black; font-weight:bold; ">
+                    Create2Help</h1>
             </div>
         </a>
         <nav>
-            <a href="index.html" style="background-color: var(--pink);">Home</a>
+            <a href=" index.html" style="background-color: var(--pink);">Home
+            </a>
             <a href="about.html" style="background-color: var(--yellow);">About</a>
             <a href="journey.html" style="background-color: var(--green);">Journey</a>
             <a href="events.html" style="background-color: var(--blue);">Events</a>
@@ -57,6 +81,7 @@
             <a href="donate.html" style="background-color: var(--white);">Donate</a>
         </nav>
     </header>
+
 
     <section style="padding: 40px; text-align: center;">
         <h2>About Us</h2>
@@ -67,6 +92,12 @@
             into charitable efforts, we empower people to become changemakers. We see creativity as a way to promote
             compassion, connection, and community improvement.
         </p>
+        <section class="quote-banner">
+            <p class="quote-text">
+                “The ability to create is the power to help.”
+            </p>
+        </section>
+
         <div class="slider">
             <img src="images/home-food.jpg" class="active" alt="Image 1">
             <img src="images/home-class.jpg" alt="Image 2">
